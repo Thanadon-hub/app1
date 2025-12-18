@@ -1,21 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
-
+import "./style.css"
 function App() {
-  return (
-    <table border="1">
-      <tr>
-        <th>Product</th>
-        <th>Price</th>
-      </tr>
-      <td>react</td>
-      <td>320</td>
-      <tr>
-        <td>React Native</td>
-        <td>340</td>
-      </tr>
-    </table>
-  );
+  const divStyle={
+    color:'red',
+    backgroundColor:'powderblue',
+    fontsize:'larger',
+    padding:'3px',
+  }
+  return <div style={divStyle}>Hello React</div>
 }
 
 export default App;
