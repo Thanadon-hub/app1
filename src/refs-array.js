@@ -17,7 +17,7 @@ export default function RefsArray() {
     table.current.deleteRow(index);
   };
   const onMouseOverRow = (i) => {
-    tr.current[i].style.backgroundColor = "lightgray";
+    tr.current[i].style.backgroundColor = "red";
   };
   const onMouseOutRow = (i) => {
     tr.current[i].style.backgroundColor = "white";
@@ -30,6 +30,7 @@ export default function RefsArray() {
       <tr>
         <th>Product</th>
         <th>Price</th>
+        <th>Delete</th>
       </tr>
       {data.map((item, i) => {
         return (
